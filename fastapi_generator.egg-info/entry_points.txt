@@ -1,0 +1,3 @@
+[console_scripts]
+fastapi-gen = fastapi_generator.cli:main
+fastapi-generator = fastapi_generator.cli:main
