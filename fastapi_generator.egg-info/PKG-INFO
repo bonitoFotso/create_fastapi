@@ -1,13 +1,13 @@
 Metadata-Version: 2.4
 Name: fastapi-generator
-Version: 1.0.0
+Version: 1.0.2
 Summary: Un générateur d'applications FastAPI avec structure complète
-Home-page: https://github.com/votrenom/fastapi-generator
-Author: Votre Nom
-Author-email: Votre Nom <votre.email@example.com>
+Home-page: https://github.com/bonitoFotso/create_fastapi
+Author: Bonito Fotso
+Author-email: Bonito Fotso <bonitofotso55@gmail.com>
 License: MIT
-Project-URL: Homepage, https://github.com/votrenom/fastapi-generator
-Project-URL: Bug Tracker, https://github.com/votrenom/fastapi-generator/issues
+Project-URL: Homepage, https://github.com/bonitoFotso/create_fastapi
+Project-URL: Bug Tracker, https://github.com/bonitoFotso/create_fastapi/issues
 Keywords: fastapi,generator,api,web,framework
 Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
@@ -233,7 +233,7 @@ fastapi-generator/
 ### Installation en mode développement
 
 ```bash
-git clone https://github.com/votrenom/fastapi-generator
+git clone https://github.com/bonitoFotso/create_fastapi
 cd fastapi-generator
 pip install -e .
 ```
@@ -256,8 +256,8 @@ MIT License - voir [LICENSE](LICENSE) pour plus de détails.
 ## 🆘 Support
 
 - 📖 [Documentation](https://fastapi-generator.readthedocs.io)
-- 🐛 [Issues GitHub](https://github.com/votrenom/fastapi-generator/issues)
-- 💬 [Discussions](https://github.com/votrenom/fastapi-generator/discussions)
+- 🐛 [Issues GitHub](https://github.com/bonitoFotso/create_fastapi/issues)
+- 💬 [Discussions](https://github.com/bonitoFotso/create_fastapi/discussions)
 
 ## 🙏 Remerciements
 

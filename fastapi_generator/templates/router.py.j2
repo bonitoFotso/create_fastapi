@@ -16,9 +16,14 @@ router = APIRouter(
 
 # Modèles Pydantic
 class {{ model_name }}Base(BaseModel):
+    {% if fields %}
     {% for field_name, field_type in fields.items() %}
     {{ field_name }}: {{ field_type }}
     {% endfor %}
+    {% else %}
+    name: str
+    description: Optional[str] = None
+    {% endif %}
 
 class {{ model_name }}Create({{ model_name }}Base):
     pass
@@ -32,7 +37,9 @@ class {{ model_name }}({{ model_name }}Base):
 {% if include_crud %}
 {% if database == 'none' %}
 # Base de données fictive
-fake_{{ router_name }}_db = []
+fake_{{ router_name }}_db = [
+    {"id": 1, "name": "Example Item", "description": "Un item d'exemple", "value": 10.0}
+]
 
 @router.get("/", response_model=List[{{ model_name }}])
 async def read_{{ router_name }}():

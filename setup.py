@@ -15,12 +15,12 @@ with open("fastapi_generator/__init__.py", "r", encoding="utf-8") as f:
 setup(
     name="fastapi-generator",
     version=version,
-    author="Votre Nom",
-    author_email="votre.email@example.com",
+    author="Bonito Fotso",
+    author_email="bonitofotso55@gmail.com",
     description="Un générateur d'applications FastAPI avec structure complète",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/votrenom/fastapi-generator",
+    url="https://github.com/bonitoFotso/create_fastapi",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",

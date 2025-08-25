@@ -23,6 +23,7 @@ fastapi_generator/templates/config.py.j2
 fastapi_generator/templates/database.py.j2
 fastapi_generator/templates/docker-compose.yml.j2
 fastapi_generator/templates/main.py.j2
+fastapi_generator/templates/main_full.py.j2
 fastapi_generator/templates/model.py.j2
 fastapi_generator/templates/requirements.txt.j2
 fastapi_generator/templates/router.py.j2

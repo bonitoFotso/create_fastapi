@@ -200,7 +200,7 @@ fastapi-generator/
 ### Installation en mode développement
 
 ```bash
-git clone https://github.com/votrenom/fastapi-generator
+git clone https://github.com/bonitoFotso/create_fastapi
 cd fastapi-generator
 pip install -e .
 ```
@@ -223,8 +223,8 @@ MIT License - voir [LICENSE](LICENSE) pour plus de détails.
 ## 🆘 Support
 
 - 📖 [Documentation](https://fastapi-generator.readthedocs.io)
-- 🐛 [Issues GitHub](https://github.com/votrenom/fastapi-generator/issues)
-- 💬 [Discussions](https://github.com/votrenom/fastapi-generator/discussions)
+- 🐛 [Issues GitHub](https://github.com/bonitoFotso/create_fastapi/issues)
+- 💬 [Discussions](https://github.com/bonitoFotso/create_fastapi/discussions)
 
 ## 🙏 Remerciements
 
