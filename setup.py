@@ -6,14 +6,14 @@ from setuptools import setup, find_packages
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-with open("fastapi_generator/__init__.py", "r", encoding="utf-8") as f:
+with open("create_fastapi/__init__.py", "r", encoding="utf-8") as f:
     for line in f:
         if line.startswith("__version__"):
             version = line.split("=")[1].strip().strip('"').strip("'")
             break
 
 setup(
-    name="fastapi-generator",
+    name="createfastapi",
     version=version,
     author="Bonito Fotso",
     author_email="bonitofotso55@gmail.com",
@@ -44,12 +44,12 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "fastapi-gen=fastapi_generator.cli:main",
-            "fastapi-generator=fastapi_generator.cli:main",
+            "fastapi-gen=create_fastapi.cli:main",
+            "createfastapi=create_fastapi.cli:main",
         ],
     },
     include_package_data=True,
     package_data={
-        "fastapi_generator": ["templates/**/*"],
+        "create_fastapi": ["templates/**/*"],
     },
 )

@@ -24,7 +24,7 @@ def temp_project_dir():
 @pytest.fixture
 def sample_app_structure(temp_project_dir):
     """Fixture pour une structure d'app exemple"""
-    from fastapi_generator.generator import FastAPIGenerator
+    from create_fastapi.generator import FastAPIGenerator
 
     generator = FastAPIGenerator(project_name="sample_app", template="minimal")
     generator.generate()

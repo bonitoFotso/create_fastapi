@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
-Name: fastapi-generator
-Version: 1.0.2
+Name: createfa
+Version: 1.0.3
 Summary: Un générateur d'applications FastAPI avec structure complète
 Home-page: https://github.com/bonitoFotso/create_fastapi
 Author: Bonito Fotso
@@ -8,7 +8,7 @@ Author-email: Bonito Fotso <bonitofotso55@gmail.com>
 License: MIT
 Project-URL: Homepage, https://github.com/bonitoFotso/create_fastapi
 Project-URL: Bug Tracker, https://github.com/bonitoFotso/create_fastapi/issues
-Keywords: fastapi,generator,api,web,framework
+Keywords: fastapi,create,api,web,framework
 Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: MIT License
@@ -38,7 +38,7 @@ Un générateur puissant et flexible pour créer des applications FastAPI avec u
 ## 🚀 Installation
 
 ```bash
-pip install fastapi-generator
+pip install createfastapi
 ```
 
 ## ✨ Fonctionnalités
@@ -164,7 +164,7 @@ fastapi-gen add-model <nom>        # Ajouter un modèle
 fastapi-gen info                   # Infos du projet
 
 # Aliases disponibles
-fastapi-generator create <nom>     # Même que fastapi-gen
+createfastapi create <nom>     # Même que fastapi-gen
 ```
 
 ## 📚 Exemples d'utilisation
@@ -209,8 +209,8 @@ python main.py
 ### Structure du package
 
 ```
-fastapi-generator/
-├── fastapi_generator/
+createfastapi/
+├── create_fastapi/
 │   ├── __init__.py
 │   ├── cli.py              # Interface ligne de commande
 │   ├── generator.py        # Logique principale
@@ -234,7 +234,7 @@ fastapi-generator/
 
 ```bash
 git clone https://github.com/bonitoFotso/create_fastapi
-cd fastapi-generator
+cd createfastapi
 pip install -e .
 ```
 
@@ -255,7 +255,7 @@ MIT License - voir [LICENSE](LICENSE) pour plus de détails.
 
 ## 🆘 Support
 
-- 📖 [Documentation](https://fastapi-generator.readthedocs.io)
+- 📖 [Documentation](https://createfastapi.readthedocs.io)
 - 🐛 [Issues GitHub](https://github.com/bonitoFotso/create_fastapi/issues)
 - 💬 [Discussions](https://github.com/bonitoFotso/create_fastapi/discussions)
 

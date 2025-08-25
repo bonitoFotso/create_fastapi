@@ -1,8 +1,8 @@
 """FastAPI Generator - Un générateur d'applications FastAPI"""
 
-__version__ = "1.0.0"
-__author__ = "Votre Nom"
-__email__ = "votre.email@example.com"
+__version__ = "1.0.2"
+__author__ = "Bonito Fotso"
+__email__ = "bonitofotso55@gmail.com"
 
 from .cli import main
 from .generator import FastAPIGenerator

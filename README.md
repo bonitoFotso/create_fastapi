@@ -5,7 +5,7 @@ Un générateur puissant et flexible pour créer des applications FastAPI avec u
 ## 🚀 Installation
 
 ```bash
-pip install fastapi-generator
+pip install createfastapi
 ```
 
 ## ✨ Fonctionnalités
@@ -131,7 +131,7 @@ fastapi-gen add-model <nom>        # Ajouter un modèle
 fastapi-gen info                   # Infos du projet
 
 # Aliases disponibles
-fastapi-generator create <nom>     # Même que fastapi-gen
+createfastapi create <nom>     # Même que fastapi-gen
 ```
 
 ## 📚 Exemples d'utilisation
@@ -176,8 +176,8 @@ python main.py
 ### Structure du package
 
 ```
-fastapi-generator/
-├── fastapi_generator/
+createfastapi/
+├── create_fastapi/
 │   ├── __init__.py
 │   ├── cli.py              # Interface ligne de commande
 │   ├── generator.py        # Logique principale
@@ -201,7 +201,7 @@ fastapi-generator/
 
 ```bash
 git clone https://github.com/bonitoFotso/create_fastapi
-cd fastapi-generator
+cd createfastapi
 pip install -e .
 ```
 
@@ -222,7 +222,7 @@ MIT License - voir [LICENSE](LICENSE) pour plus de détails.
 
 ## 🆘 Support
 
-- 📖 [Documentation](https://fastapi-generator.readthedocs.io)
+- 📖 [Documentation](https://createfastapi.readthedocs.io)
 - 🐛 [Issues GitHub](https://github.com/bonitoFotso/create_fastapi/issues)
 - 💬 [Discussions](https://github.com/bonitoFotso/create_fastapi/discussions)
 

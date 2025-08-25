@@ -8,7 +8,7 @@ from pathlib import Path
 import pytest
 from click.testing import CliRunner
 
-from fastapi_generator.cli import cli
+from create_fastapi.cli import cli
 
 
 class TestCLI:

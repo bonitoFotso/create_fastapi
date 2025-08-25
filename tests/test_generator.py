@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pytest
 
-from fastapi_generator.generator import FastAPIGenerator
+from create_fastapi.generator import FastAPIGenerator
 
 
 class TestFastAPIGenerator:

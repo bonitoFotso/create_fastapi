@@ -1,7 +1,7 @@
 # Structure complète du package avec templates
 
 # MANIFEST.in
-recursive-include fastapi_generator/templates *.j2
+recursive-include create_fastapi/templates *.j2
 include README.md
 include LICENSE
 include requirements.txt
@@ -48,12 +48,12 @@ dependencies = [
 "Bug Tracker" = "https://github.com/votrenom/fastapi-generator/issues"
 
 [project.scripts]
-fastapi-gen = "fastapi_generator.cli:main"
-fastapi-generator = "fastapi_generator.cli:main"
+fastapi-gen = "create_fastapi.cli:main"
+fastapi-generator = "create_fastapi.cli:main"
 
 # ============================================================
 
-# fastapi_generator/templates/main.py.j2
+# create_fastapi/templates/main.py.j2
 """Application FastAPI générée automatiquement"""
 
 from fastapi import FastAPI
@@ -112,7 +112,7 @@ if __name__ == "__main__":
 
 # ============================================================
 
-# fastapi_generator/templates/requirements.txt.j2
+# create_fastapi/templates/requirements.txt.j2
 # FastAPI et serveur
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
@@ -162,7 +162,7 @@ python-dotenv==1.0.0
 
 # ============================================================
 
-# fastapi_generator/templates/router_example.py.j2
+# create_fastapi/templates/router_example.py.j2
 """Router d'exemple pour les items"""
 
 from fastapi import APIRouter, HTTPException, Depends
@@ -276,7 +276,7 @@ async def delete_item(item_id: int, db: Session = Depends(get_db)):
 
 # ============================================================
 
-# fastapi_generator/templates/config.py.j2
+# create_fastapi/templates/config.py.j2
 """Configuration de l'application"""
 
 from pydantic_settings import BaseSettings
@@ -319,7 +319,7 @@ settings = Settings()
 
 # ============================================================
 
-# fastapi_generator/templates/database.py.j2
+# create_fastapi/templates/database.py.j2
 {% if database != 'none' %}
 """Configuration de la base de données"""
 
@@ -351,7 +351,7 @@ def get_db():
 
 # ============================================================
 
-# fastapi_generator/templates/Dockerfile.j2
+# create_fastapi/templates/Dockerfile.j2
 {% if include_docker %}
 FROM python:3.11-slim
 
@@ -378,7 +378,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 # ============================================================
 
-# fastapi_generator/templates/docker-compose.yml.j2
+# create_fastapi/templates/docker-compose.yml.j2
 {% if include_docker %}
 version: '3.8'
 
@@ -431,7 +431,7 @@ volumes:
 
 # ============================================================
 
-# fastapi_generator/templates/README.md.j2
+# create_fastapi/templates/README.md.j2
 # {{ project_name.title() }}
 
 {{ project_name.title() }} - Application FastAPI générée avec FastAPI Generator.
@@ -623,8 +623,8 @@ Ce projet est sous licence MIT. Voir `LICENSE` pour plus de détails.
 ## 🆘 Support
 
 - Documentation FastAPI: https://fastapi.tiangolo.com/
-- Issues: [GitHub Issues](https://github.com/votrenom/{{ project_name }}/issues)
+- Issues: [GitHub Issues](https://github.com/bonitoFotso/create_fastapi/issues)
 
 ---
 
-*Généré avec ❤️ par [FastAPI Generator](https://github.com/votrenom/fastapi-generator)*
+*Généré avec ❤️ par [FastAPI Generator](https://github.com/bonitoFotso/create_fastapi)*

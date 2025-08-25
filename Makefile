@@ -11,15 +11,15 @@ install-dev: ## Installer en mode développement
 	pip install -r requirements-dev.txt
 
 test: ## Lancer les tests
-	pytest tests/ -v --cov=fastapi_generator --cov-report=term-missing
+	pytest tests/ -v --cov=create_fastapi --cov-report=term-missing
 
 lint: ## Vérifier le code avec flake8
-	flake8 fastapi_generator tests
-	mypy fastapi_generator
+	flake8 create_fastapi tests
+	mypy create_fastapi
 
 format: ## Formater le code
-	black fastapi_generator tests
-	isort fastapi_generator tests
+	black create_fastapi tests
+	isort create_fastapi tests
 
 build: clean ## Construire le package
 	python -m build

@@ -1,4 +1,4 @@
-"""Interface en ligne de commande pour FastAPI Generator"""
+"""Interface en ligne de commande"""
 
 from pathlib import Path
 

@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "fastapi-generator"
-version = "1.0.2"
+name = "createfa"
+version = "1.0.3"
 authors = [
     {name = "Bonito Fotso", email = "bonitofotso55@gmail.com"},
 ]
@@ -25,7 +25,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Topic :: Software Development :: Code Generators",
 ]
-keywords = ["fastapi", "generator", "api", "web", "framework"]
+keywords = ["fastapi", "create", "api", "web", "framework"]
 dependencies = [
     "click>=8.0.0",
     "jinja2>=3.0.0",
@@ -37,5 +37,5 @@ dependencies = [
 "Bug Tracker" = "https://github.com/bonitoFotso/create_fastapi/issues"
 
 [project.scripts]
-fastapi-gen = "fastapi_generator.cli:main"
-fastapi-generator = "fastapi_generator.cli:main"
+fastapi-gen = "create_fastapi.cli:main"
+createfastapi = "create_fastapi.cli:main"
